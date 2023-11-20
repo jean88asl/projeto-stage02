@@ -1,0 +1,82 @@
+/*reset básico de CSS*/
+:root {
+    --black: #111;
+    --white: #FFF;
+    --bg-color: ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    /*Ajustando o tamanho dos textos para rem*/
+    font-size: 62.5%;
+    /*scroll mais suave*/
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif; 
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+
+#hero {
+    width: 592px;
+    margin: 0 auto 72px auto;
+}
+
+#hero img {
+    margin-bottom: 72px;
+}
+
+h1 {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 49px;
+    font-weight: normal;
+    line-height: 56px;
+    margin-bottom: 3.2rem;
+    /* 114.286% */
+}
+
+span {
+    font-weight: bold;
+}
+
+p {
+    color: #7D7987;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+span, a {
+    color: #F90;
+}    
+
+/* pegar um link(a) que anterior a ele tenha um outro link */
+footer a + a{
+    cursor: pointer;
+    margin-left: 2.8rem;
+}
+
+#line {
+    margin: 0 auto 2rem;
+    width: 56.8rem;
+    height: 0;
+    border: 1px solid #eceff2;
+}
+
+.bolinhas {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    right: 0;
+}
